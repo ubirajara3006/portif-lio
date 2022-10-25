@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <title>Portifólio Bira</title>
+</head>
+<body> 
+    <!--Barra de menu-->
+    <div id="barraMenu">
+        <ul>
+            <li>
+                <a href="#Home" onclick="fecharMenu()"><label><ion-icon name="caret-forward-outline"></ion-icon></label>HOME</a>
+            </li>
+            <li>
+                <a href="#Projetos" onclick="fecharMenu()"><label><ion-icon name="caret-forward-outline"></ion-icon></label>PROJETOS</a>
+            </li>
+            <li>
+                <a href="#About" onclick="fecharMenu()"><label><ion-icon name="caret-forward-outline"></ion-icon></label>SOBRE</a>
+            </li>
+
+            <li>
+                <a href="#Contato" onclick="fecharMenu()"><label><ion-icon name="caret-forward-outline"></ion-icon></label>CONTATO</a>
+            </li>
+        </ul>
+        <div class="menu-footer">
+            &copy; 2022 UBIRAJARA JUNIOR
+        </div>
+    </div> 
+    <main>
+        <!-- Barra de navegação -->
+        <nav>
+            <a href="#Home" onclick="recarregar()"><img src="Imagens/LOGO.png" alt="Página inicial"></a>
+            <div id="icon-menu" onclick="menu()">
+                <span>MENU</span><ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </nav>
+        
+            <!-- Primeira section -->
+        <section id="Home">
+            <div id="gradient-img"></div>
+            <img src="Imagens/back-1section.jpg" alt="autor">
+            
+                    
+            <!-- Apresentação -->
+            <div id="main-title">
+                <p id="the-man">UBIRAJARA JUNIOR</p>
+                <h1>WEB DEVELOPER</h1>
+                <h2>Bem-vindo ao meu portfólio.</h2>
+                <p>
+                    Nesse portifólio apresentarei um pouco dos meus conhecimentos em HTML, CSS e JS. Veja meus <a href="#Projetos">projetos</a> ou entre em <a href="#Contato">contato.</a>
+                </p>
+            </div>
+            <!-- icone que indica rolagem na página para baixo -->
+            <div id="rolagem">
+                <ion-icon name="caret-down-outline" ></ion-icon>
+            </div>
+            
+        </section>
+            
+        <section class="catalog" id="Projetos">
+            <div class="content">
+                <div class="title-wrapper-catalog">
+                    <p>Como meu trabalho poderá agregar valor aos projetos de sua empresa?</p>
+                    <div>
+                        <span>OS</span><h1>PROJETOS PESSOAIS</h1><span>abaixo</span>
+                    </div>
+                    <p>podem ser uma ótima resposta!</p> 
+                </div>
+
+                <div class="card-wrapper">
+                    <div class="card-item">
+                        <a href="">CONHEÇA</a>
+                        <img src="Imagens/CARD-1-1.jpg" alt="card-1">
+                        <div></div>
+                    </div>
+                    <div class="card-item">
+                        <a href="">CONHEÇA</a>
+                        <img src="Imagens/CARD-2-2.jpg" alt="card-2">
+                        <div></div>
+                    </div>
+                    <div class="card-item">
+                        <div id="em-breve">
+                            <h3>EM BREVE</h3>
+                            <p>Projeto em desenvolvimento...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class="about" id="About">
+            <div class="content">
+                <div class="title-wrapper-about">
+                    <div>
+                        <span>Leia</span><h1>Sobre</h1><span>mim</span>
+                    </div>
+                    <p>e conheça um pouco sobre as aventuras de um iniciante no desenvolvimento web...</p> 
+                </div>
+                <div class="about-content">
+                    <div class="left">
+                        <img src="Imagens/about.jpg" alt="About">
+                    </div>
+                    <div class="right">
+                        <p><strong>Olá, sou Ubirajara Junior</strong> um jovem iniciante na programação, tenho <strong>29 anos </strong>e atualmente moro na cidade de <strong>São Luís do Maranhão.</strong>Sobre minha formação, sou <strong>graduado em Matemática pela UEMA</strong> e atualmente faço pós em <strong>Arquitetura de Soft pela PUC-Minas</strong>. As minhas experiências  profissionais ainda não se extendem a área de TI, entretanto quero apresentar meus projetos pessoais como reflexo de meus conhecimentos em desenvolvimento web voltado para o front-end.
+                        <p>A paixão em exercer minha criatividade é o cobustível que mantém a constante busca por conhecer novas tecnologias. <strong>Considere convocar-me para uma entrevista!</strong>
+                        </p>
+                        <div>
+                            Ubirajara Junior
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer id="Contato">
+            <div class="main">
+                <h3>contatos</h3>
+                <div class="content footer-links">
+                    <div class="footer-social">
+                        <h4>Social</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/prof_.bira/">
+                                <img src="Imagens/instagram.png" alt="Instagram"/>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=5598987225724">
+                            <img src="Imagens/whatsapp-icon.png" alt="Facebook"/> 
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contate-nos</h4>
+                        <h5>+55 (98) 98722-5724</h5>
+                        <h5>prof.biraa@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="last">
+                &copy; 2022 UBIRAJARA JUNIOR | <a href="pages/sobre.html">SOBRE</a>
+            </div>
+        </footer>
+    </main> 
+    
+ <!-- links js -->
+    <script src="JS/script.js"></script>
+
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
