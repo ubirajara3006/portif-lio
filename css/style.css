@@ -585,12 +585,16 @@ img[src]{
 
 @media (max-height: 420px){
     #main-title {
-        bottom: 0%;
+        height: 500px;
+        bottom: -50%;
         background: none;
     }
     #Home img{
         width: 80%;
         top: 70%;
         left: 65%;
+    }
+    #barraMenu ul li a{
+        font-size: 1.7em;
     }
 }
