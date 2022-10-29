@@ -585,8 +585,7 @@ img[src]{
 
 @media (max-height: 420px){
     #main-title {
-        height: 500px;
-        bottom: -50%;
+        bottom: 0%;
         background: none;
     }
     #Home img{
