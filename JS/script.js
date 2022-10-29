@@ -24,7 +24,6 @@ document.querySelectorAll('.fadein-img img').forEach((img, index) => {
 
 window.addEventListener('scroll', ativaNoScroll);
 
-
 //Lógica recarregar página
 function recarregar(){
     fecharMenu()
@@ -35,10 +34,11 @@ function recarregar(){
 
 //Lógica para animação da nav e barra de menu.
 function menu() {
-    
+    iconMenu.style.display = 'none';
     if(c % 2 == 0){
         c++
         abrirMenu()
+
     }else{
         c++
         fecharMenu()
@@ -52,6 +52,7 @@ function abrirMenu(){
             iconMenu.innerHTML = '<ion-icon name="close-outline"></ion-icon>'
             logo.style = 'filter: invert()'
             iconMenu.style.color =  '#ffffff'
+            iconMenu.style.display = 'flex';
     },300)  
 }
 function fecharMenu(){
@@ -61,5 +62,6 @@ function fecharMenu(){
     barraMenu.style.animation = 'menuAnimationOFF 1s'
     setTimeout(() => {
         barraMenu.style.display ='none'
-    },1000)
+        iconMenu.style.display = 'flex';
+    },300)
 }
